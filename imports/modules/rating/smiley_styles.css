@@ -1,0 +1,87 @@
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.rating-bar {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.rating-bar li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.rating-bar a.icoAweful {
+	/*background-color: #F56505;*/
+	background-color: #ff0202;
+}
+.rating-bar a.icoBad {
+	/*background-color:#3B5998;*/
+	background-color: #a52a2a;
+}
+.rating-bar a.icoOK {
+	background-color:#33ccff;
+}
+.rating-bar a.icoGood {
+	background-color:#55f5b3;
+	/*background-color:#337ab7;*/
+	/*background-color:#BD3518;*/
+}
+.rating-bar a.icoAwesome {
+	background-color:#03b700;
+	/*background-color:#007bb7;*/
+}
+.rating-bar a.icoAweful:hover i, .rating-bar a.icoBad:hover i, .rating-bar a.icoOK:hover i,
+.rating-bar a.icoGood:hover i, .rating-bar a.icoAwesome:hover i {
+	color:#fff;
+}
+/*a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}*/
+
+.smileys li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.smileys li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.smileys li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.smileys i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.smileys li a {
+ background-color: #D3D3D3;   
+}

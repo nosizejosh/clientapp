@@ -1,0 +1,32 @@
+<!-- app layout is centred content. all content will be centred on each screen vertical and horizontal -->
+<template name="App_body"> 
+	{{#HammerTouchArea gestureMap=templateGestures}}
+	 <div id="container" class="vertical-center {{cordova}}">
+		{{#unless connected}}
+		<div class="notifications">
+			<div class="notification">
+				<span class="icon-sync"></span>
+				<div class="meta">
+					<div class="title-notification">
+						<!-- to allow for custome prahses and custome trasnalation see i18n folder -->
+	                	{{_ 'layouts.appBody.tryingToConnect'}} 
+	              	</div>
+	              	<div class="description">
+		                {{_ 'layouts.appBody.connectionIssue'}}
+	              	</div>
+				</div>
+			</div>
+		</div>
+		{{/unless}}
+		<div id="content-container">
+			{{#momentum plugin="fade"}}
+          		{{#if Template.subscriptionsReady}}
+            		{{> Template.dynamic template=main}}
+            	{{else}}
+            		{{> App_loading}}
+            	{{/if}}
+            {{/momentum}}
+        </div>
+    </div>
+   {{/HammerTouchArea}}
+</template>
